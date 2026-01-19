@@ -34,10 +34,11 @@ export async function POST(req: Request) {
 
         // Email Content
         const mailOptions = {
-            from: `"SyntureTech Website" <${process.env.EMAIL_USER}>`,
-            to: "sagar.yadav@synturetech.com", // Receiving email
+            // Using a generic name or just the email to avoid "brand impersonation" flags when sending from @gmail.com
+            from: `"Website Form" <${process.env.EMAIL_USER}>`,
+            to: "sagar.yadav@synturetech.com",
             replyTo: email,
-            subject: `New Enquiry from ${name} - ${service}`,
+            subject: `Enquiry: ${service} - ${name}`, // Simplified subject
             text: `
 Name: ${name}
 Email: ${email}
