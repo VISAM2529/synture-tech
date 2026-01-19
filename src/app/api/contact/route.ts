@@ -34,8 +34,8 @@ export async function POST(req: Request) {
 
         // Email Content
         const mailOptions = {
-            from: process.env.EMAIL_USER || "noreply@synture.tech",
-            to: process.env.EMAIL_USER || "hello@synture.tech", // Receiving email
+            from: "noreply@synture.tech",
+            to: "sagar.yadav@synturetech.com", // Receiving email
             subject: `New Enquiry from ${name} - ${service}`,
             html: `
         <h2>New Contact Enquiry</h2>
