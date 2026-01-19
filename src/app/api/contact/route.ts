@@ -23,7 +23,7 @@ export async function POST(req: Request) {
                 pass: process.env.EMAIL_PASS,
             },
         });
-//sample
+        //sample
         try {
             await transporter.verify();
         } catch (verifyError) {
@@ -34,7 +34,7 @@ export async function POST(req: Request) {
 
         // Email Content
         const mailOptions = {
-            from: "noreply@synture.tech",
+            from: "gaikwadsameer422@gmail.com",
             to: "sagar.yadav@synturetech.com", // Receiving email
             subject: `New Enquiry from ${name} - ${service}`,
             html: `
