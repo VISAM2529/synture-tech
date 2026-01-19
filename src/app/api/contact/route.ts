@@ -23,7 +23,7 @@ export async function POST(req: Request) {
                 pass: process.env.EMAIL_PASS,
             },
         });
-
+//sample
         try {
             await transporter.verify();
         } catch (verifyError) {
