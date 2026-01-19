@@ -34,7 +34,7 @@ export async function POST(req: Request) {
 
         // Email Content
         const mailOptions = {
-            from: process.env.EMAIL_USER,
+            from: `"SyntureTech Website" <${process.env.EMAIL_USER}>`,
             to: "sagar.yadav@synturetech.com", // Receiving email
             replyTo: email,
             subject: `New Enquiry from ${name} - ${service}`,
