@@ -34,9 +34,19 @@ export async function POST(req: Request) {
 
         // Email Content
         const mailOptions = {
-            from: "gaikwadsameer422@gmail.com",
+            from: process.env.EMAIL_USER,
             to: "sagar.yadav@synturetech.com", // Receiving email
+            replyTo: email,
             subject: `New Enquiry from ${name} - ${service}`,
+            text: `
+Name: ${name}
+Email: ${email}
+Phone: ${phone || "N/A"}
+Company: ${company || "N/A"}
+Service: ${service}
+Message:
+${message}
+            `,
             html: `
         <h2>New Contact Enquiry</h2>
         <p><strong>Name:</strong> ${name}</p>
