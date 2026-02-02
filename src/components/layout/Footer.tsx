@@ -59,11 +59,11 @@ export function Footer() {
                         <ul className="flex flex-col gap-4">
                             <li className="flex items-start gap-3 text-muted-foreground">
                                 <MapPin className="h-5 w-5 shrink-0 text-primary" />
-                                <span>123 Tech Park, Innovation Hub, Pune, India - 411057</span>
+                                <span>Audumber Nivya Building, Dhayari Narhe Rd, Narhe, Pune, Maharashtra 411041</span>
                             </li>
                             <li className="flex items-center gap-3 text-muted-foreground">
                                 <Phone className="h-5 w-5 shrink-0 text-primary" />
-                                <span>+91 98765 43210</span>
+                                <span>+91 84215 39304</span>
                             </li>
                             <li className="flex items-center gap-3 text-muted-foreground">
                                 <Mail className="h-5 w-5 shrink-0 text-primary" />
